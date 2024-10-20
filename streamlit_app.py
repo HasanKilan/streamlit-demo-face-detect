@@ -17,7 +17,7 @@ example_images = [
 ]
 
 # Add a select box for examples
-example_selection = st.selectbox("Choose an example image:", ["None"] + example_images)
+example_selection = st.selectbox("اختر صورة من الصورة التالية:", ["None"] + example_images)
 
 # Function to load the DNN model.
 @st.cache_resource()
