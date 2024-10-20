@@ -116,4 +116,4 @@ placeholders[1].text("Output Image")
 # Convert opencv image to PIL.
 out_image = Image.fromarray(out_image[:, :, ::-1])
 # Create a link for downloading the output file.
-st.markdown(get_image_download_link(out_image, "face_output.jpg", "Download Output Image"), unsafe_allow_html=True)
+st.markdown(get_image_download_link(out_image, "face_output.jpg", "نزل الصورة المحددة"), unsafe_allow_html=True)
