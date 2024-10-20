@@ -81,7 +81,7 @@ if example_selection != "None":
     image = cv2.imread(example_selection, cv2.IMREAD_COLOR)
 else:
     # File uploader for user's own image
-    img_file_buffer = st.file_uploader("Choose a file", type=["jpg", "jpeg", "png"])
+    img_file_buffer = st.file_uploader("اختر صورة من ملفاتك", type=["jpg", "jpeg", "png"])
     if img_file_buffer is not None:
         raw_bytes = np.asarray(bytearray(img_file_buffer.read()), dtype=np.uint8)
         image = cv2.imdecode(raw_bytes, cv2.IMREAD_COLOR)
